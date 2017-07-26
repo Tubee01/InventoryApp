@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/general_window_padding">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimaryText"
+            tools:text="blablablablablablablablablabla"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/price_text_view"
+                style="@style/DetailsStyle"
+                tools:text="52"/>
+
+            <TextView
+                style="@style/DetailsStyle"
+                android:paddingEnd="@dimen/text_view_spacing"
+                android:paddingLeft="@dimen/text_view_spacing"
+                android:paddingRight="@dimen/text_view_spacing"
+                android:paddingStart="@dimen/text_view_spacing"
+                android:text="@string/currency" />
+
+            <TextView
+                style="@style/DetailsStyle"
+                android:paddingLeft="@dimen/text_view_spacing"
+                android:paddingRight="@dimen/text_view_spacing"
+                android:text="@string/currency_quantity_separator" />
+
+            <TextView
+                android:id="@+id/quantity_text_view"
+                style="@style/DetailsStyle"
+                android:paddingLeft="@dimen/text_view_spacing"
+                android:paddingRight="@dimen/text_view_spacing"
+                tools:text="8"/>
+
+            <TextView
+                style="@style/DetailsStyle"
+                android:text="@string/on_stock" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sale_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:onClick="saleProduct"
+        android:text="@string/sell"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

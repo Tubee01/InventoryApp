@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.inventoryapp.CatalogActivity">
+
+
+    <LinearLayout
+        android:id="@+id/main_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/general_window_padding"
+        android:orientation="vertical">
+        <!-- Image category -->
+        <ImageView
+            android:id="@+id/product_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin_padding_large"
+            android:layout_marginTop="@dimen/margin_padding_large"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/take_photo_content_description"
+            android:scaleType="fitCenter" />
+
+        <!-- Name related views -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Name label -->
+            <TextView
+                style="@style/LabelStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/name" />
+
+            <!-- Name edit text -->
+            <EditText
+                android:id="@+id/name_edit_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="@string/name_hint"
+                android:inputType="textCapWords"
+                 />
+
+        </LinearLayout>
+
+        <!-- Price related views -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Price label -->
+            <TextView
+                style="@style/LabelStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/price_text_view" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:paddingLeft="@dimen/text_view_spacing"
+                android:paddingRight="@dimen/text_view_spacing">
+
+
+                <!-- Price edit text -->
+                <EditText
+                    android:id="@+id/price_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    tools:text="4" />
+
+                <!-- Currency -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:paddingEnd="@dimen/margin_padding_normal"
+                    android:paddingLeft="@dimen/margin_padding_normal"
+                    android:paddingRight="@dimen/margin_padding_normal"
+                    android:paddingTop="@dimen/margin_padding_small"
+                    android:text="@string/currency"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <!-- Quantity related views -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Quantity label -->
+            <TextView
+                style="@style/LabelStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/quantity_text_view" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <!-- Decrement -->
+                <Button
+                    android:id="@+id/decrement_button"
+                    style="@style/QuantityButtonStyle"
+                    android:onClick="decreaseQuantity"
+                    android:text="@string/decrease_quantity_button_text" />
+
+                <!-- Quantity edit text -->
+                <EditText
+                    android:id="@+id/quantity_edit_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="number"
+                    tools:text="4" />
+
+                <!-- Increment -->
+                <Button
+                    android:id="@+id/increment_button"
+                    style="@style/QuantityButtonStyle"
+                    android:onClick="increaseQuantity"
+                    android:text="@string/increase_quantity_button_text" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!-- Supplier phone -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Supplier label -->
+            <TextView
+                style="@style/LabelStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/supplier_phone" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <!-- Phone edit text -->
+                <EditText
+                    android:id="@+id/supplier_phone_edit_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:hint="@string/supplier_hint"
+                    android:inputType="phone"
+                    tools:text="+36" />
+
+                <!-- Call Button -->
+                <ImageButton
+                    android:id="@+id/call_image_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/colorAccent"
+                    android:contentDescription="@string/call_supplier_content_description"
+                    android:onClick="callSupplier"
+                    android:src="@drawable/ic_call_supplier" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

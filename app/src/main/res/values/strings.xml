@@ -1,0 +1,48 @@
+<resources>
+    <!--General texts -->
+    <string name="app_name">Inventory</string>
+
+    <!-- Catalog Activity texts -->
+    <string name="empty_view_title_text">No products added yet</string>
+    <string name="empty_view_subtitle_text">Get started by adding a product</string>
+
+    <!-- Menu option texts -->
+    <string name="action_save">Save</string>
+    <string name="action_take_photo">Take photo</string>
+    <string name="action_delete">Delete</string>
+
+    <!-- Detail Activity texts -->
+    <string name="detail_activity_title_new_product">Add Product</string>
+    <string name="detail_activity_title_edit_product">Edit Product</string>
+    <string name="currency">&#8364;</string>
+    <string name="currency_quantity_separator">|</string>
+    <string name="on_stock">on stock</string>
+    <string name="sell">sell</string>
+    <string name="name">Name</string>
+    <string name="name_hint">Name</string>
+    <string name="price_text_view">Price</string>
+    <string name="quantity_text_view">Quantity</string>
+    <string name="decrease_quantity_button_text">-</string>
+    <string name="increase_quantity_button_text">+</string>
+    <string name="supplier_phone">Supplier phone</string>
+    <string name="supplier_hint">+3670</string>
+    <string name="take_photo_content_description">Photo of the current product</string>
+    <string name="call_supplier_content_description">Picture of a phone indicating the action</string>
+
+    <!-- Toast messages-->
+    <string name="toast_message_product_not_saved">Saving product failed</string>
+    <string name="toast_message_product_saved">Product saved</string>
+    <string name="toast_message_product_update_failed">Update failed</string>
+    <string name="toast_message_product_updated">Product updated</string>
+    <string name="toast_message_fill_in_all_fields">Fill in all fields and take a picture</string>
+    <string name="toast_message_product_not_deleted">Delete failed</string>
+    <string name="toast_message_product_deleted">Product deleted</string>
+    <string name="toast_message_add_phone_number">Add a phone number to call</string>
+
+    <!-- Alert Dialog texts -->
+    <string name="delete_product">Delete this product?</string>
+    <string name="cancel">Cancel</string>
+    <string name="exit_without_saving">Discard your changes and exit?</string>
+    <string name="keep_editing">Keep editing</string>
+    <string name="discard">Discard</string>
+</resources>

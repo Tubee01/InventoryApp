@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- General dimensions used throughout the app -->
+    <dimen name="fab_margin">32dp</dimen>
+    <dimen name="general_window_padding">16dp</dimen>
+    <dimen name="text_view_spacing">4dp</dimen>
+
+    <!-- Detail Activity dimensions -->
+    <dimen name="margin_padding_normal">16dp</dimen>
+    <dimen name="margin_padding_small">8dp</dimen>
+    <dimen name="margin_padding_large">42dp</dimen>
+</resources>
